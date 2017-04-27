@@ -60,9 +60,10 @@ var resultado = [
     "completed": true
   }]
 
+var info = document.getElementById("lista-escrita");
 
 var recorrido = resultado.forEach(function(elemento){
-  document.write("<br>Título: " + elemento.title + "<br>");
+  info.innerHTML += '<br><li>' + elemento.title + '</li><br>';
 });
 
 function imprimirLista(){
@@ -77,3 +78,9 @@ function imprimirLista(){
 }
 
 imprimirLista.recorrido();
+
+var addElemento = document.getElementById("btn-agregar");
+addElemento.onclick = function agregarTarea() {
+  resultado.push();
+  printHTML(product.toHTML());
+};
