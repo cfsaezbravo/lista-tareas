@@ -63,7 +63,7 @@ var resultado = [
 var info = document.getElementById("lista-escrita");
 
 var recorrido = resultado.forEach(function(elemento){
-  info.innerHTML += '<br><li>' + elemento.title + '</li><br>';
+  info.innerHTML += '<li>' + elemento.title + '</li><br>';
 });
 
 function imprimirLista(){
@@ -84,7 +84,7 @@ function obtenerNuevoElemento(){
 
 	var contEmail = document.getElementsByClassName("email-list");
 
-	contEmail[0].innerHTML += input.value +"<br>";
+	contEmail[0].innerHTML += "<li>" + input.value +"<br>";
 
 	input.value = "";
 }
