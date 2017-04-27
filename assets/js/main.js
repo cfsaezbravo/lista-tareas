@@ -81,4 +81,10 @@ imprimirLista.recorrido();
 
 function obtenerNuevoElemento(){
 	var input = document.getElementById("nuevoDato");
+
+	var contEmail = document.getElementsByClassName("email-list");
+
+	contEmail[0].innerHTML += input.value +"<br>";
+
+	input.value = "";
 }
