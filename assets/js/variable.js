@@ -59,21 +59,3 @@ var resultado = [
     "title": "illo est ratione doloremque quia maiores aut",
     "completed": true
   }]
-
-
-var recorrido = resultado.forEach(function(elemento){
-  document.write("<br>Título: " + elemento.title + "<br>");
-});
-
-function imprimirLista(){
-
-	var input = document.getElementById("id");
-
-	var contLista = document.getElementsByClassName("lista-hecha");
-
-	contLista[0].innerHTML += input.value +"<br>";
-
-	input.value = "";
-}
-
-imprimirLista.recorrido();
