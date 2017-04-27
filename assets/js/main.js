@@ -79,8 +79,6 @@ function imprimirLista(){
 
 imprimirLista.recorrido();
 
-var addElemento = document.getElementById("btn-agregar");
-addElemento.onclick = function agregarTarea() {
-  resultado.push();
-  printHTML(product.toHTML());
-};
+function obtenerNuevoElemento(){
+	var input = document.getElementById("nuevoDato");
+}
