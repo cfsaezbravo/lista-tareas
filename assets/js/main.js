@@ -60,11 +60,14 @@ var resultado = [
     "completed": true
   }]
 
+function listaVisible(){
+
 var info = document.getElementById("lista-escrita");
 
 var recorrido = resultado.forEach(function(elemento){
   info.innerHTML += '<li>' + elemento.title + '</li><br>';
 });
+}
 
 function imprimirLista(){
 
